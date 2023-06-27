@@ -16,16 +16,58 @@ body {
 
 h1,
 h2 {
-    font-family: Oswald, sans-serif;
+    font-family: Diphylleia, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #252525;
+    color: #b81111;
+}
 
 #logo {
     float: left;
     font-size: 300%;
     margin-left: 30px;
+    
 }
+
+/* hero image and cover text */
+
+#hero-outer {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#header-text,
+#header-text h2 {
+    color: rgb(170, 19, 19);
+}
+
+#header-text {
+    color: white;
+    font-size: 150%;
+    font-family: Diphylleia, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    width: 300px;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    bottom: 30px;
+    left: 60px;
+    position: absolute;
+}
+
+/* #hero-image {
+    height: 200px;
+    width: 100%;
+    background: url('../images/aloe-hero-image.jpg') no-repeat center center; */
+
+    /* animates zoom effect on loading page */
+    /* animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+} */
 
 
 /* navigation links */
@@ -46,6 +88,7 @@ h2 {
     justify-content: flex-end;
     padding-right: 30px;
     gap: 20px;
+    margin-top: 30px;
     /* align-items: flex-end;   */
 }
 
@@ -57,7 +100,7 @@ h2 {
 /* why aloe vera */
 
 #aloe-vera-benefits {
-    height: 800px;
+    height: 600px;
 }
 
 #why-aloe-vera {
@@ -68,7 +111,8 @@ h2 {
 
 #benefits-image {
     height: 800px;
-    background: url("../images/aloe-plant-bg.jpg");
+    width: 100%;
+    background: url("../images/aloe-plant-bg.jpg") no-repeat center center;
 }
 
 
