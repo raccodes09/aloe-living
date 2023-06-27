@@ -14,6 +14,13 @@ body {
 
 /* headings and logos */
 
+h1,
+h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
+
 #logo {
     float: left;
     font-size: 300%;
@@ -45,6 +52,27 @@ body {
 #page-links li {
     list-style-type: none;
 }
+
+
+/* why aloe vera */
+
+#aloe-vera-benefits {
+    height: 800px;
+}
+
+#why-aloe-vera {
+    text-align: right;
+    margin: 20px 200px;
+    font-size: 150%;
+}
+
+#benefits-image {
+    height: 800px;
+    background: url("../images/aloe-plant-bg.jpg");
+}
+
+
+
 
 
 /* footer */
