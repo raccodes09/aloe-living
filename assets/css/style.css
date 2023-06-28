@@ -71,6 +71,10 @@ header a {
     border-bottom: 1px solid #2471a3;
 }
 
+.active-page {
+    border-bottom: 1px solid #2471a3;
+}
+
 
 /* why aloe vera */
 
