@@ -35,16 +35,42 @@
         </nav>
     </header>
 
-    <!-- hero image and benefits -->
+    <!-- hero image and signup -->
     <section id="benefits">
 
         <div id="hero-image"></div>
 
         <div id="signup-header">
-            <h2>Why Aloe Vera</h2>
-            <h3>The benefits to using Aloe Vera</h3>
+            <h2>Subscribe to newsletter</h2>
+            <h3>Keep up to date with Aloe Living</h3>
         </div>
 
+        <form action="https://formdump.codeinstitute.net/" method="post" id="signup-form">
+
+            <label for="fname">First Name</label>
+            <input class="form-text" type="text" id="fname" name="first_name" required>
+            <br>
+            <label for="lname">Last Name</label>
+            <input class="form-text" type="text" id="lname" name="last_name" required>
+            <br>
+            <label for="email">Email Address</label>
+            <input class="form-text" type="email" id="email" name="email_address" required>
+            <br>
+            <label for="phone">Phone Number</label>
+            <input class="form-text" type="number" id="phone" name="phone_number" required>
+            <br>
+            <label for="hear-about">How did you hear about us?</label>
+            <select name="hear-about" id="hear-about">
+                <option value="Word of Mouth"></option>
+                <option value="Social Media"></option>
+                <option value="Tv or Magazine"></option>
+                <option value="Your own research"></option>
+            </select>
+            <br>
+            <br>
+            <label type="checkbox" for="accept_terms" value="no" checked></label>
+            
+        </form>
         
     </section>
 
