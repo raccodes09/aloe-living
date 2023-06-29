@@ -14,6 +14,10 @@ body {
 
 /* headings and logos */
 
+header {
+    height: 150px;
+}
+
 h1,
 h2 {
     font-family: Diphylleia, sans-serif;
@@ -47,7 +51,7 @@ h2 {
 
 #page-links,
 #logo {
-    line-height: 75px;
+    line-height: 150px;
 }
 
 #page-links ul {
@@ -79,7 +83,7 @@ header a {
 /* hero image and benefits text */
 
 #benefits {
-    height: 1200px;
+    height: 1000px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -92,9 +96,10 @@ header a {
 }
 
 #hero-image {
-    height: 1100px;
+    height: 1000px;
     width: 100%;
     background: url("../images/aloe-plant-bg.jpg") no-repeat center center;
+    
     
 
     /* animates zoom effect on loading page */
@@ -116,18 +121,18 @@ header a {
 
 #benefits-header {
     font-family: Diphylleia, sans-serif;
-    font-size: 130%;
+    font-size: 150%;
     text-transform: initial;
     letter-spacing: 3px;
 
-    width: 475px;
+    width: 600px;
     height: 200px;
 
     padding-top: 40px;
     padding-left: 40px;
 
     top: 40px;
-    right: 350px;
+    right: 250px;
 
     position: absolute;
 }
@@ -141,11 +146,8 @@ header a {
     width: 800px;
     height: 400px;
     
-    /* padding-top: 40px;
-    padding-left: 40px; */
-    
     top: 240px;
-    right: 350px;
+    right: 175px;
     
     position: absolute;
 }
@@ -187,7 +189,7 @@ hr {
 /* footer */
 
 footer {
-    height: 150px;
+    height: 100px;
 }
 
 .social-networks {
