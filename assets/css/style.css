@@ -14,7 +14,8 @@ body {
 
 /* headings and logos */
 
-h1, h2 {
+h1,
+h2 {
     font-family: Diphylleia, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -34,7 +35,7 @@ h1, h2 {
     font-size: 50%;
     font-weight: 900;
     text-transform: capitalize;
-    
+
 }
 
 /* navigation links */
@@ -44,7 +45,8 @@ h1, h2 {
     letter-spacing: 5px;
 }
 
-#page-links, #logo {
+#page-links,
+#logo {
     line-height: 75px;
 }
 
@@ -74,31 +76,7 @@ header a {
     border-bottom: 1px solid #2471a3;
 }
 
-/* hero image */
-
-#hero-image {
-    height: 1100px;
-    width: 100%;
-    background: url("../images/aloe-plant-bg.jpg") no-repeat center center;
-    
-    /* animates zoom effect on loading page */
-        animation-name: hero-zoom;
-        animation-duration: 5s;
-        animation-fill-mode: forwards;
-}
-    
- /* creates the level of zoom for hero image */
-@keyframes hero-zoom {
-     from {
-        transform: scale(1);
-     }
-    
-    to {
-        transform: scale(1.1);
-    }
-}
-
-/* benefits */
+/* hero image and benefits text */
 
 #benefits {
     height: 1200px;
@@ -107,11 +85,99 @@ header a {
     position: relative;
 }
 
-#why-aloe-vera {
-    text-align: right;
-    margin: 20px 200px;
-    font-size: 150%;
+#benefits-header,
+#benefits-header h3 {
+    color: #2471a3;
+    text-align: center;
 }
+
+#hero-image {
+    height: 1100px;
+    width: 100%;
+    background: url("../images/aloe-plant-bg.jpg") no-repeat center center;
+    
+
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#benefits-header {
+    font-family: Diphylleia, sans-serif;
+    font-size: 130%;
+    text-transform: initial;
+    letter-spacing: 3px;
+
+    width: 475px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 40px;
+
+    top: 40px;
+    right: 350px;
+
+    position: absolute;
+}
+
+#benefits-content {
+    font-family: Ysabeau, sans-serif;
+    font-size: 110%;
+    text-transform: initial;
+    letter-spacing: 3px;
+    
+    width: 800px;
+    height: 400px;
+    
+    /* padding-top: 40px;
+    padding-left: 40px; */
+    
+    top: 240px;
+    right: 350px;
+    
+    position: absolute;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px auto;
+}
+
+#left-benefits {
+    float: center;
+    padding-top: 60;
+    width: 70%;
+    text-align: left;
+}
+
+#right-benefits {
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+
+.left-benefits-content p {
+    font-size: 100%;
+}
+
+.right-benefits-content p {
+    font-size: 100%;
+}
+
+
 
 
 
@@ -128,7 +194,7 @@ footer {
     text-align: center;
 }
 
-.social-networks > li {
+.social-networks>li {
     display: inline;
 }
 
@@ -136,5 +202,32 @@ footer {
     font-size: 160%;
     margin: 1%;
     padding: 5%;
-    color: #3a3a3a;
+    color: #1e8449;
+}
+
+/* media queries */
+
+/* For larger to medium screens size from 1200px wide and down*/
+@media screen and (max-width: 1200px) {
+    #benefits-header {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-benefits,
+    #right-benefits {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
 }
