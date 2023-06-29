@@ -172,11 +172,13 @@ hr {
 }
 
 .left-benefits-content p {
-    font-size: 100%;
+    font-size: 110%;
+    font-weight: 100;
 }
 
 .right-benefits-content p {
-    font-size: 100%;
+    font-size: 110%;
+    font-weight: 100;
 }
 
 
