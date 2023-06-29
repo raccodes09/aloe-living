@@ -58,7 +58,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 50px;
+    margin-right: 30px;
     gap: 20px;
 }
 
@@ -97,8 +97,9 @@ header a {
 
 #hero-image {
     height: 1000px;
-    width: 100%;
-    background: url("../images/aloe-plant-bg.jpg") no-repeat center center;
+    background: url("../images/aloe-plant-bg.jpg");
+    background-size: cover;
+    background-position: center;
     
     
 
@@ -125,7 +126,7 @@ header a {
     text-transform: initial;
     letter-spacing: 3px;
 
-    width: 600px;
+    max-width: 600px;
     height: 200px;
 
     padding-top: 40px;
@@ -143,7 +144,7 @@ header a {
     text-transform: initial;
     letter-spacing: 3px;
     
-    width: 800px;
+    max-width: 800px;
     height: 400px;
     
     top: 240px;
@@ -178,6 +179,11 @@ hr {
 
 .right-benefits-content p {
     font-size: 110%;
+    font-weight: 100;
+}
+
+.left-benefits-content h2, .right-benefits-content h2 {
+    color: black;
     font-weight: 100;
 }
 
@@ -220,7 +226,7 @@ footer {
     margin-top: 50px;
     
 
-    width: 600px;
+    max-width: 600px;
     height: 200px;
 
     padding-top: 40px;
@@ -239,7 +245,7 @@ footer {
     letter-spacing: 3px;
     text-align: center;
 
-    width: 800px;
+    width: 600px;
     height: 400px;
 
     top: 280px;
@@ -273,15 +279,15 @@ footer {
     letter-spacing: 3px;
     margin-top: 50px;
 
-    width: 700px;
+    max-height: 600px;
     height: 200px;
-
+    
     padding-top: 40px;
     padding-left: 40px;
-
+    
     top: 40px;
     right: 275px;
-
+    
     position: absolute;
 }
 
@@ -292,8 +298,9 @@ footer {
     height: 450px;
     
     border-radius: 2px;
-    top: 30%;
-    right: 25%;
+    
+    top: 320px;
+    right: 380px;
     
     position: absolute;
 }
@@ -345,22 +352,82 @@ form label {
     #benefits-header {
         width: 65%;
         height: 1200px;
-        margin: 0 auto;
+        margin: 0 auto; 
     }
 
-    #welcome {
+    #benefits-contents {
         padding: 30px 0;
         margin: 0;
     }
 
     #left-benefits,
     #right-benefits {
-        width: 100%;
-        float: left;
+        width: 75%;
+        float: right;
         padding: 0;
     }
 
     hr {
         display: none;
     }
+
+    #hero-image {
+        background-image: center left;
+        width: 80%;
+    }
+
+    #logo {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
 }
+
+/* For larger to medium screen sizes from 950px wide and down*/
+
+@media screen and (max-width: 950px) {
+
+    #page-links {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #benefits-header {
+        left: 0;
+    }
+
+    #benefits-contents {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #left-benefits,
+    #right-benefits {
+        width: 100%;
+    }
+
+    .left-benefits-content h2,
+    .right-benefits-content h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-benefits-content p,
+    .right-benefits-content p {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    #hero-image {
+        background-image: center left;
+        width: 50%;
+    }
+
+}
+
