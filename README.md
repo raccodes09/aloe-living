@@ -41,5 +41,7 @@ Using Google Lighthouse within Google Chrome Developer Tools I was able to test 
 ### Content
 Code from social media links was taken from CI Love Running project
 
+Code from hero image zoom was taken from CI Love Running project
+
 ### Media
 Hero image taken from Pexels
