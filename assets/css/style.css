@@ -26,18 +26,22 @@ h2 {
     color: #1e8449;
 }
 
-#logo {
+header>a {
     float: left;
-    font-size: 300%;
-    margin-left: 50px;
     font-weight: 900;
-    gap: 2px;
+    letter-spacing: 2px;
+    margin-left: 50px;
+}
+
+#logo {
+    font-size: 300%;
 }
 
 #sub-logo {
     color: #2471a3;
-    font-size: 50%;
-    font-weight: 900;
+    position: relative;
+    bottom: 50px;
+    font-size: 150%;
     text-transform: capitalize;
 
 }
@@ -100,8 +104,8 @@ header a {
     background: url("../images/aloe-plant-bg.jpg");
     background-size: cover;
     background-position: center;
-    
-    
+
+
 
     /* animates zoom effect on loading page */
     animation-name: hero-zoom;
@@ -143,13 +147,13 @@ header a {
     font-size: 110%;
     text-transform: initial;
     letter-spacing: 3px;
-    
+
     max-width: 800px;
     height: 400px;
-    
+
     top: 240px;
     right: 175px;
-    
+
     position: absolute;
 }
 
@@ -182,7 +186,8 @@ hr {
     font-weight: 100;
 }
 
-.left-benefits-content h2, .right-benefits-content h2 {
+.left-benefits-content h2,
+.right-benefits-content h2 {
     color: black;
     font-weight: 100;
 }
@@ -224,7 +229,7 @@ footer {
     text-transform: initial;
     letter-spacing: 3px;
     margin-top: 50px;
-    
+
 
     max-width: 600px;
     height: 200px;
@@ -281,27 +286,27 @@ footer {
 
     max-height: 600px;
     height: 200px;
-    
+
     padding-top: 40px;
     padding-left: 40px;
-    
+
     top: 40px;
     right: 275px;
-    
+
     position: absolute;
 }
 
 #signup-form {
-    background-color: rgba(34,153,84, 0.2);
+    background-color: rgba(34, 153, 84, 0.2);
     padding: 20px;
     max-width: 500px;
     height: 450px;
-    
+
     border-radius: 2px;
-    
+
     top: 320px;
     right: 380px;
-    
+
     position: absolute;
 }
 
@@ -352,7 +357,7 @@ form label {
     #benefits-header {
         width: 65%;
         height: 1200px;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
     #benefits-contents {
@@ -430,4 +435,3 @@ form label {
     }
 
 }
-
