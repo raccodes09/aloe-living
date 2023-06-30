@@ -262,43 +262,56 @@ footer {
 
 /* sign up */
 
-#signup-header,
-#signup-header h3 {
-    color: #2471a3;
-    text-align: center;
-}
-
-#signup-header {
-    font-family: Diphylleia, sans-serif;
-    font-size: 150%;
+#signup-content {
+    font-family: Ysabeau, sans-serif;
+    font-size: 100%;
     text-transform: initial;
     letter-spacing: 3px;
     margin-top: 50px;
 
-    max-height: 600px;
-    height: 200px;
+    max-width: 800px;
+    height: 625px;
 
-    padding-top: 40px;
-    padding-left: 40px;
+    /* padding-top: 40px;
+    padding-left: 40px; */
 
-    top: 40px;
-    right: 275px;
+    top: 150px;
+    right: 175px;
 
     position: absolute;
+
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 1% 1%;
+}
+
+#contact-content h2, h3 {
+    font-family: Diphylleia, sans-serif;
+    text-transform: initial;
+    letter-spacing: 3px;
+}
+
+#signup-content>h2 {
+    color: #1e8449;
+    text-align: center;
+    font-size: 250%;
+}
+
+#signup-content>h3 {
+    color: #2471a3;
+    text-align: center;
+    font-size: 150%;
 }
 
 #signup-form {
-    background-color: rgba(34, 153, 84, 0.2);
-    padding: 20px;
-    max-width: 500px;
-    height: 450px;
+    max-width: 700px;
+    height: 500px;
 
     border-radius: 2px;
 
-    top: 320px;
-    right: 380px;
+    position: relative;
 
-    position: absolute;
+    padding: 3% 1% 1%;
 }
 
 form label {

@@ -40,47 +40,48 @@
 
         <div id="hero-image"></div>
 
-        <div id="signup-header">
+        <div id="signup-content">
             <h2>Subscribe to newsletter</h2>
             <h3>Keep up to date with Aloe Living</h3>
+            <br><br>
+
+            <form action="https://formdump.codeinstitute.net/" method="post" id="signup-form">
+
+                <label for="fname">First Name</label>
+                <input class="form-text" type="text" id="fname" name="first_name" required>
+                <br>
+                <label for="lname">Last Name</label>
+                <input class="form-text" type="text" id="lname" name="last_name" required>
+                <br>
+                <label for="email">Email Address</label>
+                <input class="form-text" type="email" id="email" name="email_address" required>
+                <br>
+                <label for="phone">Phone Number</label>
+                <input class="form-text" type="text" id="phone" name="phone_number" required>
+                <br>
+                <br>
+                <label for="hear-about">How did you hear about us?</label>
+                <select id="form-dropdown" name="hear-about" id="hear-about">
+                    <option value="word of mouth">Word of Mouth</option>
+                    <option value="social media">Social Media</option>
+                    <option value="tv or Magazine">TV or Magazine</option>
+                    <option value="your own research">Your own research</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <label for="accept_terms">Do you agree to being contacted?</label>
+                <input class="form-checkbox" type="checkbox" name="accept_terms" value="yes" unchecked required>
+                <br>
+                <input id="submit-button" type="submit" value="Get Healthy!" required>
+
+            </form>
         </div>
-
-        <form action="https://formdump.codeinstitute.net/" method="post" id="signup-form">
-
-            <label for="fname">First Name</label>
-            <input class="form-text" type="text" id="fname" name="first_name" required>
-            <br>
-            <label for="lname">Last Name</label>
-            <input class="form-text" type="text" id="lname" name="last_name" required>
-            <br>
-            <label for="email">Email Address</label>
-            <input class="form-text" type="email" id="email" name="email_address" required>
-            <br>
-            <label for="phone">Phone Number</label>
-            <input class="form-text" type="text" id="phone" name="phone_number" required>
-            <br>
-            <br>
-            <label for="hear-about">How did you hear about us?</label>
-            <select id="form-dropdown" name="hear-about" id="hear-about">
-                <option value="word of mouth">Word of Mouth</option>
-                <option value="social media">Social Media</option>
-                <option value="tv or Magazine">TV or Magazine</option>
-                <option value="your own research">Your own research</option>
-            </select>
-            <br>
-            <br>
-            <br>
-            <label for="accept_terms">Do you agree to being contacted?</label>
-            <input class="form-checkbox" type="checkbox" name="accept_terms" value="yes" unchecked required>
-            <br>
-            <input id="submit-button" type="submit" value="Get Healthy!">
-
-        </form>
 
     </section>
 
     <footer>
-        
+
         <ul class="social-networks">
             <li>
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener"
