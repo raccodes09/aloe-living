@@ -189,12 +189,6 @@ hr {
     font-weight: 100;
 }
 
-.left-benefits-content h2,
-.right-benefits-content h2 {
-    color: black;
-    font-weight: 100;
-}
-
 
 /* footer */
 
@@ -220,46 +214,40 @@ footer {
 
 /* contact */
 
-#contact-header,
-#contact-header h3 {
-    color: #2471a3;
-    text-align: center;
-}
-
-#contact-header {
-    font-family: Diphylleia, sans-serif;
-    font-size: 150%;
-    text-transform: initial;
-    letter-spacing: 3px;
-    margin-top: 50px;
-
-
-    max-width: 600px;
-    height: 200px;
-
-    padding-top: 40px;
-    padding-left: 40px;
-
-    top: 40px;
-    right: 275px;
-
-    position: absolute;
-}
-
 #contact-content {
     font-family: Ysabeau, sans-serif;
     font-size: 110%;
     text-transform: initial;
     letter-spacing: 3px;
-    text-align: center;
 
-    width: 600px;
-    height: 400px;
+    max-width: 800px;
+    height: 625px;
 
-    top: 280px;
+    top: 150px;
     right: 175px;
 
     position: absolute;
+
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 1% 1%;
+}
+
+#contact-content h2, h3 {
+    font-family: Diphylleia, sans-serif;
+    font-size: 150%;
+    text-transform: initial;
+    letter-spacing: 3px;
+}
+
+#contact-content > h2 {
+    color: #1e8449;
+    text-align: center;
+}
+
+#contact-content > h3 {
+    color: #2471a3;
+    text-align: center;
 }
 
 .contact-info {
