@@ -16,6 +16,11 @@ Aloe Living is a website designed to inform users of the benfits of using Aloe V
 ## Testing
 
 
+## Performance
+Using Google Lighthouse within Google Chrome Developer Tools I was able to test the performance, accessibility, best practice and SEO. The results shown below:
+
+![Mockup image](docs/Performance.png)
+
 
 
 ## Bugs
