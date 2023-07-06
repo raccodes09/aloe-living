@@ -111,6 +111,22 @@ h2 {
     position: relative;
     border-top: 2px solid #2471a3;
     border-bottom: 2px solid #2471a3;
+    
+    /* animates zoom effect on loading page */
+        animation-name: hero-zoom;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+}
+    
+    /* creates the level of zoom for hero image */
+    @keyframes hero-zoom {
+        from {
+            transform: scale(1);
+        }
+    
+        to {
+            transform: scale(1.1);
+    }
 }
 
 .image-container {
@@ -217,7 +233,7 @@ footer {
 }
 
 #contact-logo {
-    font-size: 300%;
+    font-size: 250%;
     color: #1e8449;
     text-align: center;
     text-transform: uppercase;
@@ -246,4 +262,79 @@ footer {
     text-align: center;
     font-size: 100%;
     font-weight: bold;
+}
+
+
+/* sign-up page */
+
+#signup-content-container {
+    display: flexbox;
+    float: right;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+#signup-logo {
+    font-size: 300%;
+    color: #1e8449;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#signup-sub-logo {
+    font-size: 200%;
+    color: #2471a3;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#signup-form {
+    max-width: 700px;
+    height: 500px;
+
+    border-radius: 2px;
+
+    position: relative;
+
+    padding: 3% 1% 1%;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.form-text {
+    color: black;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 2px solid #2471a3;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.form-text:hover {
+    border-color: #1e8449;
+}
+
+#submit-button {
+    background-color: #2471a3;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#submit-button:hover {
+    background-color: #1e8449;
+}
+
+#hear-about {
+    border-radius: 5px;
+    border: 1px solid #2471a3;
+    height: 20px;
+    width: auto;
+    text-align: center;
 }
