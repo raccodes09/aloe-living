@@ -260,7 +260,8 @@ footer {
 
 #contact-image {
     float: left;
-    
+    margin-left: 20px;
+    height: 450px;
 }
 
 .contact-heading {
@@ -286,11 +287,23 @@ footer {
 
 /* sign-up page */
 
+#signup-sub-logo {
+    font-size: 200%;
+    color: #2471a3;
+    text-align: center;
+    text-transform: capitalize;
+}
+
 #signup-content-container {
     display: flex;
-    float: right;
     padding-top: 30px;
     padding-right: 30px;
+}
+
+#signup-video {
+    float: left;
+    margin-left: 20px;
+    height: 450px;
 }
 
 #signup-logo {
@@ -300,12 +313,6 @@ footer {
     text-transform: uppercase;
 }
 
-#signup-sub-logo {
-    font-size: 200%;
-    color: #2471a3;
-    text-align: center;
-    text-transform: capitalize;
-}
 
 #signup-form {
     max-width: 700px;
