@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Ysabeau+Office:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ysabeau:wght@100&display=swap');
 
 * {
     margin: 0;
@@ -8,40 +8,129 @@
 
 body {
     font-family: Ysabeau, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: #3a3a3a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 
 /* headings and logos */
 
-header {
-    background-color: yellow;
-    height: 20%;
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 h1 {
-    font-family: Diphylleia, sans-serif;
+    font-family: Montserrat, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #1e8449;
 }
 
 h2 {
-    font-family: Diphylleia, sans-serif;
-    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    text-transform: capitalize;
     letter-spacing: 4px;
     color: #2471a3;
 }
 
-#logo {
-    float: left;
-    font-size: 3em;
-    margin-left: 0.5em;
+.logo>a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    width: 600px;
+}
+
+#main-logo {
+    font-size: 50px;
+    margin-left: 30px;
+    flex-grow: 1;
 }
 
 #sub-logo {
-    float: left;
-    font-size: 1.5em;
-    margin-left: 0.5em;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+
+/* navigation links */
+
+#page-links {
+    font-size: 120%;
+    letter-spacing: 4px;
+}
+
+#page-links ul {
+    display: flex;
+    float: right;
+    list-style-type: none;
+    margin-right: 20px;
+    gap: 10px;
+    font-weight: bold;
+    color: #2471a3;
+}
+
+#page-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#page-links a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+
+/* hero image */
+
+.hero-image-container {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    flex-basis: 1;
+}
+
+#hero-image-one {
+    height: 280px;
+    width: 100%;
+    background: url("../images/aloe-header-bg.jpg") no-repeat center center;
+    margin-top: 10px;
+}
+
+#hero-image-two {
+    height: 280px;
+    width: 100%;
+    background: url("../images/aloe-plant-extract.webp") no-repeat center center;
+    margin: 10 0;
+}
+
+#hero-image-three {
+    height: 300px;
+    width: 50%;
+    background: url("");
+}
+
+/* page content */
+
+#page-content {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
