@@ -10,8 +10,10 @@ Aloe Living is a website designed to inform users of the benfits of using Aloe V
 
 ## Features
 
-
-
+Benefits of Aloe Vera use
+Contact deatils
+Sign up form
+Images of ALoe Vera
 
 ## Testing
 

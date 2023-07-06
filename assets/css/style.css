@@ -144,6 +144,7 @@ h2 {
     height: 568px;
     width: 50%;
     background: url("../images/aloe-plant-extract.webp") no-repeat center center;
+
 }
 
 #image-two {
@@ -159,19 +160,21 @@ h2 {
 }
 
 .benefits-content-container {
-    display: flexbox;
+    display: block;
 }
 
 .benefits-content-container > h2 {
     text-align: center;
     font-size: 300%;
     font-weight: bold;
+    width: 100%;
 }
 
 .benefits-content-container > h3 {
     text-align: center;
     font-size: 200%;
     font-weight: bold;
+    width: 100%;
 }
 
 .benefits-content-container p {
@@ -184,20 +187,30 @@ h2 {
     padding-top: 30px;
     width: 33%;
     float: left;
+    margin: 0 15px;
 }
 
 #right-benefits {
     padding-top: 30px;
     width: 33%;
     float: right;
+    margin: 0 15px;
 }
 
 #left-benefits-content {
-    width: 60%;
+    width: 50%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 25px;
 }
 
 #right-benefits-content {
-    width: 60%;
+    width: 50%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 25px;
 }
 
 
@@ -226,8 +239,7 @@ footer {
 /* contact page */
 
 #contact-content-container {
-    display: flexbox;
-    float: right;
+    display: flex;
     padding-top: 30px;
     padding-right: 30px;
 }
@@ -246,7 +258,13 @@ footer {
     text-transform: capitalize;
 }
 
+#contact-image {
+    float: left;
+    
+}
+
 .contact-heading {
+    float: right;
     text-align: center;
     font-size: 150%;
     font-weight: bold;
@@ -259,6 +277,7 @@ footer {
 }
 
 .contact-info {
+    float: right;
     text-align: center;
     font-size: 100%;
     font-weight: bold;
@@ -268,7 +287,7 @@ footer {
 /* sign-up page */
 
 #signup-content-container {
-    display: flexbox;
+    display: flex;
     float: right;
     padding-top: 30px;
     padding-right: 30px;
@@ -291,11 +310,8 @@ footer {
 #signup-form {
     max-width: 700px;
     height: 500px;
-
     border-radius: 2px;
-
     position: relative;
-
     padding: 3% 1% 1%;
 }
 
@@ -338,3 +354,13 @@ form label {
     width: auto;
     text-align: center;
 }
+
+
+
+/* media queries */
+
+/* .image-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
