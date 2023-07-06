@@ -20,11 +20,16 @@ a {
 
 /* headings and logos */
 
+header {
+    border-bottom: 1px none;
+}
+
 .head-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    margin-bottom: 2px;
 }
 
 h1 {
@@ -96,41 +101,82 @@ h2 {
 }
 
 
-/* hero image */
+/* hero image and page image */
 
-.hero-image-container {
-    height: 600px;
+#hero-image {
+    height: 80px;
     width: 100%;
+    background: url("../images/aloe-banner.jpg") no-repeat center center;
     overflow: hidden;
     position: relative;
-    flex-basis: 1;
+    border-top: 2px solid #2471a3;
+    border-bottom: 2px solid #2471a3;
 }
 
-#hero-image-one {
-    height: 280px;
+.image-container {
+    display: flex;
+    height: 600px;
     width: 100%;
-    background: url("../images/aloe-header-bg.jpg") no-repeat center center;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+    position: relative;
     margin-top: 10px;
 }
 
-#hero-image-two {
-    height: 280px;
-    width: 100%;
+#image-one {
+    height: 568px;
+    width: 50%;
     background: url("../images/aloe-plant-extract.webp") no-repeat center center;
-    margin: 10 0;
 }
 
-#hero-image-three {
-    height: 300px;
+#image-two {
+    height: 568px;
     width: 50%;
-    background: url("");
+    background: url("../images/aloe-slices-oil.jpg") no-repeat center center;
 }
 
 /* page content */
 
 #page-content {
     height: 600px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+}
+
+/* .benefits-content-container {
+    height: 600px;
+    width: 95%;
+    border-style: solid;
+    border-color: #2471a3;
+    border-width: 1px;
+    margin: 0 15px;
+} */
+
+.benefits-content-container > h2 {
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.benefits-content-container > h3 {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.benefits-content-container p {
+    font-size: 120%;
+    font-weight: bold;
+    color: black;
+}
+
+#left-benefits {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+}
+
+#right-benefits {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
 }
