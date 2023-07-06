@@ -133,7 +133,7 @@ h2 {
 #image-two {
     height: 568px;
     width: 50%;
-    background: url("../images/aloe-slices-oil.jpg") no-repeat center center;
+    background: url("../images/aloe-slices-oil-medium.jpg") no-repeat center center;
 }
 
 /* page content */
@@ -142,14 +142,9 @@ h2 {
     height: 600px;
 }
 
-/* .benefits-content-container {
-    height: 600px;
-    width: 95%;
-    border-style: solid;
-    border-color: #2471a3;
-    border-width: 1px;
-    margin: 0 15px;
-} */
+.benefits-content-container {
+    display: flexbox;
+}
 
 .benefits-content-container > h2 {
     text-align: center;
@@ -179,4 +174,76 @@ h2 {
     padding-top: 30px;
     width: 33%;
     float: right;
+}
+
+#left-benefits-content {
+    width: 60%;
+}
+
+#right-benefits-content {
+    width: 60%;
+}
+
+
+/* footer */
+
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #2471a3;
+}
+
+
+/* contact page */
+
+#contact-content-container {
+    display: flexbox;
+    float: right;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+#contact-logo {
+    font-size: 300%;
+    color: #1e8449;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#contact-sub-logo {
+    font-size: 200%;
+    color: #2471a3;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.contact-info-email {
+    text-transform: lowercase;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
 }
