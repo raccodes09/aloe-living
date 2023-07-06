@@ -111,21 +111,21 @@ h2 {
     position: relative;
     border-top: 2px solid #2471a3;
     border-bottom: 2px solid #2471a3;
-    
+
     /* animates zoom effect on loading page */
-        animation-name: hero-zoom;
-        animation-duration: 5s;
-        animation-fill-mode: forwards;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
-    
-    /* creates the level of zoom for hero image */
-    @keyframes hero-zoom {
-        from {
-            transform: scale(1);
-        }
-    
-        to {
-            transform: scale(1.1);
+
+/* creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
     }
 }
 
@@ -137,7 +137,7 @@ h2 {
 
     overflow: hidden;
     position: relative;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 #image-one {
@@ -150,37 +150,41 @@ h2 {
 #image-two {
     height: 568px;
     width: 50%;
-    background: url("../images/aloe-slices-oil-medium.jpg") no-repeat center center;
+    background: url("../images/aloe-slices-oil-small.jpg") no-repeat center center;
 }
 
 /* page content */
 
 #page-content {
     height: 600px;
+    margin-top: 75px;
 }
 
 .benefits-content-container {
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.benefits-content-container > h2 {
+.benefits-content-container > h2, h3 {
     text-align: center;
-    font-size: 300%;
     font-weight: bold;
     width: 100%;
 }
 
-.benefits-content-container > h3 {
-    text-align: center;
+.benefits-content-container>h2 {
+    font-size: 300%
+}
+
+.benefits-content-container>h3 {
     font-size: 200%;
-    font-weight: bold;
-    width: 100%;
 }
 
 .benefits-content-container p {
-    font-size: 120%;
-    font-weight: bold;
+    font-size: 150%;
     color: black;
+    font-weight: bold;
+    justify-content: left;
 }
 
 #left-benefits {
@@ -198,26 +202,26 @@ h2 {
 }
 
 #left-benefits-content {
-    width: 50%;
+    width: 60%;
     float: right;
-    line-height: 20px;
+    line-height: 75px;
     clear: both;
     margin-bottom: 25px;
 }
 
 #right-benefits-content {
-    width: 50%;
+    width: 60%;
     float: left;
-    line-height: 20px;
+    line-height: 75px;
     clear: both;
     margin-bottom: 25px;
 }
-
 
 /* footer */
 
 footer {
     height: 150px;
+    margin-top: -150px;
 }
 
 .social-networks {
@@ -242,6 +246,15 @@ footer {
     display: flex;
     padding-top: 30px;
     padding-right: 30px;
+    justify-content: center;
+}
+
+#contact-content-container>div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    text-align: left;
 }
 
 #contact-logo {
@@ -259,29 +272,28 @@ footer {
 }
 
 #contact-image {
-    float: left;
-    margin-left: 20px;
+    /* float: left; */
+    /* margin-left: 20px; */
     height: 450px;
 }
 
-.contact-heading {
-    float: right;
-    text-align: center;
-    font-size: 150%;
+.contact-heading,
+.contact-info {
     font-weight: bold;
+}
+
+.contact-heading {
+    font-size: 150%;
+
 }
 
 .contact-info-email {
     text-transform: lowercase;
     font-size: 100%;
-    font-weight: bold;
 }
 
 .contact-info {
-    float: right;
-    text-align: center;
     font-size: 100%;
-    font-weight: bold;
 }
 
 
@@ -296,8 +308,7 @@ footer {
 
 #signup-content-container {
     display: flex;
-    padding-top: 30px;
-    padding-right: 30px;
+    justify-content: center;
 }
 
 #signup-video {
@@ -366,8 +377,47 @@ form label {
 
 /* media queries */
 
-/* .image-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
+@media screen and (max-width: 950px) {
+
+    #page-links {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+        .benefits-content-container {
+            width: 90%;
+            height: 1200px;
+            margin: 0 auto;
+        }
+    
+        .left-benefits-content,
+        .right-benefits-content {
+            width: inherit;
+        }
+    
+        .left-benefits-content h2,
+        .right-benefits-content h2 {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .left-benefits-content p,
+        .right-benefits-content p {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .image-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
