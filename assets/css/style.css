@@ -10,6 +10,8 @@ body {
     font-family: Ysabeau, Helvetica, sans-serif;
     font-weight: 300;
     color: #3a3a3a;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 a {
@@ -37,6 +39,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #1e8449;
+    font-size: 300%;
 }
 
 h2 {
@@ -44,6 +47,14 @@ h2 {
     text-transform: capitalize;
     letter-spacing: 4px;
     color: #2471a3;
+    font-size: 250%;
+}
+
+h3 {
+    font-family: Montserrat, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-size: 200%;
 }
 
 .logo>a {
@@ -75,16 +86,17 @@ h2 {
 #page-links {
     font-size: 120%;
     letter-spacing: 4px;
-}
-
-#page-links ul {
+    list-style-type: none;
     display: flex;
     float: right;
-    list-style-type: none;
-    margin-right: 20px;
-    gap: 10px;
+    justify-content: space-between;
+}
+
+#page-links ul li {
     font-weight: bold;
     color: #2471a3;
+    display: inline-flex;
+    margin: 0.3em 1em;
 }
 
 #page-links a {
@@ -98,6 +110,10 @@ h2 {
 
 .active {
     border-bottom: 1px solid #3a3a3a;
+}
+
+#page-links input[type='checkbox'], label {
+    display: none;
 }
 
 
@@ -138,6 +154,7 @@ h2 {
     overflow: hidden;
     position: relative;
     margin-top: 25px;
+    flex-grow: 1;
 }
 
 #image-one {
@@ -156,9 +173,24 @@ h2 {
 /* page content */
 
 #page-content {
-    height: 600px;
-    margin-top: 75px;
+    height: 700px;
+    margin: 75px 0;
+    flex-grow: 1;
 }
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+
 
 .benefits-content-container {
     display: flex;
@@ -166,10 +198,12 @@ h2 {
     flex-wrap: wrap;
 }
 
-.benefits-content-container > h2, h3 {
+.benefits-content-container>h2,
+h3 {
     text-align: center;
     font-weight: bold;
     width: 100%;
+    padding-bottom: 15px;
 }
 
 .benefits-content-container>h2 {
@@ -221,7 +255,6 @@ h2 {
 
 footer {
     height: 150px;
-    margin-top: -150px;
 }
 
 .social-networks {
@@ -229,6 +262,7 @@ footer {
 }
 
 .social-networks>li {
+    margin-top: -150px;
     display: inline;
 }
 
@@ -247,6 +281,7 @@ footer {
     padding-top: 30px;
     padding-right: 30px;
     justify-content: center;
+    height: 600px;
 }
 
 #contact-content-container>div {
@@ -272,8 +307,6 @@ footer {
 }
 
 #contact-image {
-    /* float: left; */
-    /* margin-left: 20px; */
     height: 450px;
 }
 
@@ -283,17 +316,19 @@ footer {
 }
 
 .contact-heading {
-    font-size: 150%;
+    font-size: 2rem;
+    margin-top: 1rem;
 
 }
 
 .contact-info-email {
     text-transform: lowercase;
-    font-size: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .contact-info {
-    font-size: 100%;
+    font-size: 1.5rem;
 }
 
 
@@ -314,7 +349,8 @@ footer {
 #signup-video {
     float: left;
     margin-left: 20px;
-    height: 450px;
+    height: 500px;
+    width: 600px;
 }
 
 #signup-logo {
@@ -330,7 +366,7 @@ footer {
     height: 500px;
     border-radius: 2px;
     position: relative;
-    padding: 3% 1% 1%;
+    padding-left: 10px;
 }
 
 form label {
@@ -382,12 +418,12 @@ form label {
     #page-links {
         clear: left;
         float: left;
-        margin-left: 30px;
+        margin-left: 10px;
         margin-bottom: 20px;
         line-height: 25px;
     }
 
-        .benefits-content-container {
+    /* .benefits-content-container {
             width: 90%;
             height: 1200px;
             margin: 0 auto;
@@ -408,7 +444,7 @@ form label {
         .right-benefits-content p {
             text-align: center;
             padding: 0 20px;
-        }
+        } */
 
 }
 
@@ -420,4 +456,47 @@ form label {
         align-items: center;
     }
 
+@media (max-width: 576px) {
+/* Here is the magic: if the checkbox is not marked, the adjacent list is not displayed */
+    input[type="checkbox"]:not(:checked)+ul {
+        display: none;
+    }
+
+    #page-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Stlying the menu icon, the checkbox stays hidden */
+    #page-links label {
+        text-align: right;
+        display: block;
+        padding: 0.5em;
+        line-height: 1.6em;
+        align-self: center;
+    }
+
+    /* Because we are in mobile mode, we want to display it as a vertical list */
+    #page-links ul {
+        display: block;
+    }
+
+    /* We have two lists: the first one are the always visibile items in the 
+        menu bar. The second one is the one that will be hidden */
+    #page-links ul:last-child {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    #page-links ul li {
+        margin-bottom: 0;
+        width: 100%;
+        text-align: right;
+        padding: 0.5em;
+    }
 }
+    
+
+    @media screen and (max-width: 320px) {
