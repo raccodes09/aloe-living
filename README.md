@@ -6,14 +6,16 @@
 
 ## Project Overview
 
-Aloe Living is a website designed to inform users of the benfits of using Aloe Vera. It informs the user how Aloe Vera can be used in many differnt forms.
+Aloe Living is a website designed to inform users of the benefits of using Aloe Vera. It informs the user how Aloe Vera can be used in many differnt forms.
 
 ## Features
 
-Benefits of Aloe Vera use
-Contact deatils
-Sign up form
-Images of ALoe Vera
+Benefits of Aloe Vera use.
+Contact deatils.
+Sign up form to subscribe to newsletter.
+Images of ALoe Vera.
+Informative video highlighting Aloe Vera as a drink.
+Social Media links to allow user to view social content of website.
 
 ## Testing
 
@@ -31,14 +33,19 @@ When screen size reduces to approximately tablet size and below, the Footer blen
 
 ## Deployment
 
+
+
 ## Credits
 
 ### Content
 
-Code from social media links was taken from CI Love Running project
+Code from social media links was taken from CI Love Running project.
 
-Code from hero image zoom was taken from CI Love Running project
+Code from hero image zoom was taken from CI Love Running project.
+
+Portion of code from article in CSS tricks regarding media queries.
 
 ### Media
 
-Hero image taken from Pexels
+Hero image taken from Pexels.
+Video taken from Forever Living YouTube page.

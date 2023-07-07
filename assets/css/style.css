@@ -459,35 +459,54 @@ form label {
         margin: 0;
     }
 
-                 #contact-content-container {
-                     flex-direction: column;
-                     align-items: center;
-                     width: 90%;
-                     margin: 0 auto;
-                 }
-        
-                 #contact-image {
-                     width: 90vw;
-                 }
-        
-                 .contact-heading,
-                 .contact-info {
-                     width: 100%;
-                     margin: 0;
-                 }
-        
-                 .contact-heading {
-                     font-size: 20px;
-                     text-align: center;
-                     margin-top: 5px;
-                 }
-        
-                 .contact-info,
-                 .contact-info-email {
-                     font-size: 15px;
-                     text-align: center;
-                     margin-top: 5px;
-                 }
+    #contact-content-container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #contact-image {
+        width: 90vw;
+    }
+
+    .contact-heading,
+    .contact-info {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-heading {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .contact-info,
+    .contact-info-email {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    #signup-logo {
+        font-size: 20px;
+    }
+
+    #signup-sub-logo {
+        font-size: 10px;
+    }
+
+    #signup-content-container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #signup-video {
+        width: 90vw;
+    }
 }
 
 /* Media query for screens between 601px and 1024px */
@@ -514,25 +533,8 @@ form label {
         justify-content: center;
     }
 
-     
-        #signup-logo {
-            font-size: 20px;
-        }
-    
-        #signup-sub-logo {
-            font-size: 10px;
-        }
-    
-        #signup-content-container {
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-            margin: 0 auto;
-        }
-    
-        #signup-video {
-            width: 90vw;
-        }
+
+
 }
 
 /* Media query for screens larger than 1024px */
