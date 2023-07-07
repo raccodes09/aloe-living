@@ -78,8 +78,13 @@ To help with user experience, the header which holds the links, is fixed meaning
 ## Validator Testing
 
 [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to HTML code.
+    - [Homepage](/assets/testing/testing-html-homepage.pdf)
+    - [Contact](/assets/testing/testing-html-contact.pdf)
+    - [Sign Up](/assets/testing/testing-html-signup.pdf)
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate CSS code.
+
+    - [CSS](/assets/testing/testing-css.pdf)
 
 [WAVE Testing](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) was used to test accessibility of website. No errors were found.
 
