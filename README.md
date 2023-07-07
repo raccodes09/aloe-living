@@ -90,9 +90,11 @@ To help with user experience, the header which holds the links, is fixed meaning
 
 ## Performance
 
-Using Google Lighthouse within Google Chrome Developer Tools I was able to test the performance, accessibility, best practice and SEO. The results shown below:
+Using Google Lighthouse within Google Chrome Developer Tools I was able to test the performance, accessibility, best practice and SEO. Overall performance could be improved which I will look at in future updates. 
 
-![Mockup image]()
+The results shown below:
+
+![Mockup image](/assets/testing/testing-perfomance.png)
 
 ## Bugs
 
