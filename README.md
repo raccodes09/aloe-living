@@ -54,9 +54,10 @@ To help with user experience, the header which holds the links, is fixed meaning
 ### Frameworks, Libraries & Other Resources
 
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google Fonts was used to import the 'Hubballi' and 'Mina' fonts into the style.css file which is used on all pages throughout the project. [Hubballi](https://fonts.google.com/specimen/Hubballi?query=hubball) is used for the body and [Mina](https://fonts.google.com/specimen/Mina?query=mina) for the h1, h2, h3 headings.
+    - Google Fonts was used to import fonts into the style.css file.
 
 1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome provideds small graphics to complement the logo and various headers.
 
 1. [Git:](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
@@ -86,7 +87,7 @@ To help with user experience, the header which holds the links, is fixed meaning
 
 Using Google Lighthouse within Google Chrome Developer Tools I was able to test the performance, accessibility, best practice and SEO. The results shown below:
 
-![Mockup image](docs/Performance.png)
+![Mockup image]()
 
 ## Bugs
 
@@ -110,7 +111,7 @@ Code from social media links was taken from CI Love Running project.
 
 Code from hero image zoom was taken from CI Love Running project.
 
-[CSS Tricks]("https://css-tricks.com/") Portion of code from article in CSS tricks regarding media queries.
+[CSS Tricks](https://css-tricks.com/) Portion of code from article in CSS tricks regarding media queries.
 
 [W3Schools](https://www.w3schools.com/) 
 
