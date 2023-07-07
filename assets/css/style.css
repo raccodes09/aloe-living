@@ -10,8 +10,9 @@ body {
     font-family: Ysabeau, Helvetica, sans-serif;
     font-weight: 300;
     color: #3a3a3a;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    min-width: 100vw;
 }
 
 a {
@@ -47,7 +48,7 @@ h2 {
     text-transform: capitalize;
     letter-spacing: 4px;
     color: #2471a3;
-    font-size: 250%;
+    font-size: 200%;
 }
 
 h3 {
@@ -112,11 +113,6 @@ h3 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-#page-links input[type='checkbox'], label {
-    display: none;
-}
-
-
 /* hero image and page image */
 
 #hero-image {
@@ -176,6 +172,7 @@ h3 {
     height: 700px;
     margin: 75px 0;
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 .page-header {
@@ -196,6 +193,7 @@ hr {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 0 auto;
 }
 
 .benefits-content-container>h2,
@@ -223,20 +221,22 @@ h3 {
 
 #left-benefits {
     padding-top: 30px;
-    width: 33%;
+    width: 50%;
     float: left;
     margin: 0 15px;
 }
 
 #right-benefits {
     padding-top: 30px;
-    width: 33%;
+    width: 50%;
     float: right;
     margin: 0 15px;
 }
 
+
+
 #left-benefits-content {
-    width: 60%;
+    width: 80%;
     float: right;
     line-height: 75px;
     clear: both;
@@ -244,7 +244,7 @@ h3 {
 }
 
 #right-benefits-content {
-    width: 60%;
+    width: 80%;
     float: left;
     line-height: 75px;
     clear: both;
@@ -255,6 +255,7 @@ h3 {
 
 footer {
     height: 150px;
+    margin-top: auto;
 }
 
 .social-networks {
@@ -413,90 +414,147 @@ form label {
 
 /* media queries */
 
-@media screen and (max-width: 950px) {
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
 
-    #page-links {
-        clear: left;
-        float: left;
-        margin-left: 10px;
-        margin-bottom: 20px;
-        line-height: 25px;
+    /* Adjust the styles for smaller screens here */
+    header {
+        text-align: center;
+        margin: 0;
     }
 
-    /* .benefits-content-container {
-            width: 90%;
-            height: 1200px;
-            margin: 0 auto;
-        }
-    
-        .left-benefits-content,
-        .right-benefits-content {
-            width: inherit;
-        }
-    
-        .left-benefits-content h2,
-        .right-benefits-content h2 {
-            width: 100%;
-            text-align: center;
-        }
-    
-        .left-benefits-content p,
-        .right-benefits-content p {
-            text-align: center;
-            padding: 0 20px;
-        } */
+    .logo {
+        display: block;
+        text-align: center;
+    }
 
-}
+    .logo h1 {
+        font-size: 20px;
+    }
 
-@media screen and (max-width: 800px) {
+    .logo h2 {
+        font-size: 10px;
+    }
 
-    .image-container {
+    nav {
+        text-align: center;
+    }
+
+    #page-links ul {
+        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
-@media (max-width: 576px) {
-/* Here is the magic: if the checkbox is not marked, the adjacent list is not displayed */
-    input[type="checkbox"]:not(:checked)+ul {
-        display: none;
+    .benefits-content-container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
     }
 
-    #page-links {
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    /* Stlying the menu icon, the checkbox stays hidden */
-    #page-links label {
-        text-align: right;
-        display: block;
-        padding: 0.5em;
-        line-height: 1.6em;
-        align-self: center;
-    }
-
-    /* Because we are in mobile mode, we want to display it as a vertical list */
-    #page-links ul {
-        display: block;
-    }
-
-    /* We have two lists: the first one are the always visibile items in the 
-        menu bar. The second one is the one that will be hidden */
-    #page-links ul:last-child {
+    .left-benefits,
+    .right-benefits {
         width: 100%;
-        flex-basis: 100%;
+        margin: 0;
     }
 
-    #page-links ul li {
-        margin-bottom: 0;
+    #contact-content-container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #contact-image {
+        width: 90vw;
+    }
+
+    .contact-heading,
+    .contact-info {
         width: 100%;
-        text-align: right;
-        padding: 0.5em;
+        margin: 0;
+    }
+
+    .contact-heading {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .contact-info,
+    .contact-info-email {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    #signup-logo {
+        font-size: 20px;
+    }
+
+    #signup-sub-logo {
+        font-size: 10px;
+    }
+
+    #signup-content-container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #signup-video {
+        width: 90vw;
     }
 }
-    
 
-    @media screen and (max-width: 320px) {
+/* Media query for screens between 601px and 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* Adjust the styles for medium-sized screens here */
+    header {
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    #page-links ul {
+        justify-content: center;
+    }
+}
+
+/* Media query for screens larger than 1024px */
+@media screen and (min-width: 1025px) {
+
+    /* Adjust the styles for larger screens here */
+    header {
+        padding: 20px;
+    }
+
+    .logo h1 {
+        font-size: 32px;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    #page-links ul {
+        justify-content: flex-end;
+    }
+}
