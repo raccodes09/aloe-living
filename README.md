@@ -45,6 +45,19 @@ To help with user experience, the header which holds the links, is fixed meaning
 
 Each page is styled in a clean, pleasing to the eye contrast using colours associated with natural living, calmness and nature - the idea behind behind Aloe Vera itself.
 
+#### Main Page 
+
+![Mockup image](/assets/testing/readme-homepage.png)
+
+#### Contact Page 
+
+![Mockup image](/assets/testing/readme-contact.png)
+
+#### Sign Up Page 
+
+![Mockup image](/assets/testing/readme-signup.png)
+
+
 ## Technologies Used
 
 ### Languages
