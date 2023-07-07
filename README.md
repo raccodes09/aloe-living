@@ -126,13 +126,15 @@ Code from social media links was taken from CI Love Running project.
 
 Code from hero image zoom was taken from CI Love Running project.
 
-[CSS Tricks](https://css-tricks.com/) Portion of code from article in CSS tricks regarding media queries.
+[CSS Tricks](https://css-tricks.com/) Information and code from articles in CSS Tricks regarding media queries and a fixed header.
 
 [W3Schools](https://www.w3schools.com/) 
 
-[Stack Overflow](https://stackoverflow.com/)
+[Stack Overflow](https://stackoverflow.com/) Assisted with flexbox styling.
 
-Deploymoent section of README.md provided by CI's template.
+Deployment section of README.md provided by CI's template.
+
+Information on the benefits of Aloe Vera gained from researching various webistes that focus on Aloe Vera products and other uses.
 
 ### Media
 
