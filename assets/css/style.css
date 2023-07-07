@@ -126,7 +126,7 @@ h3 {
 #hero-image {
     height: 80px;
     width: 100%;
-    background: url("../images/aloe-banner.jpg") no-repeat center center;
+    background: url("../images/aloe-banner.webp") no-repeat center center;
     overflow: hidden;
     position: relative;
     border-top: 2px solid #2471a3;
@@ -171,7 +171,7 @@ h3 {
 #image-two {
     height: 568px;
     width: 50%;
-    background: url("../images/aloe-slices-oil-small.jpg") no-repeat center center;
+    background: url("../images/aloe-slices-oil-small.webp") no-repeat center center;
 }
 
 /* page content */
