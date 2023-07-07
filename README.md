@@ -29,6 +29,10 @@ Using Google Lighthouse within Google Chrome Developer Tools I was able to test 
 
 When screen size reduces to approximately tablet size and below, the Footer blends with body. Working with "sticky footer" coding I have attempted to fix the footer below each section, howvever my attempts have not worked. To resolve this, I will have to style the body in a differnet way.
 
+I overcame this by targeting page-content with overflow-y auto. I know there is perhaps a more efficent/best practice way to make the code more appealing - this will be revisisted in a later update.
+
+Issue regarding the links when screen size reduces. It forces content outside the viewport. I tried to implement the "hamburger" method but was unsuccessful. This will be revisisted in a later update - code will need be rewritten to allow a more positive visual experience as well as general user experience.
+
 ## Validator Testing
 
 ## Deployment
