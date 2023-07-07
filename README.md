@@ -4,13 +4,31 @@
 
 ![Mockup image](docs/Website.png)
 
+
+
 ## Project Overview
 
 Aloe Living is a website designed to inform users of the benefits of using Aloe Vera. It informs the user how Aloe Vera can be used in many differnt forms.
 
+
+
 ## Wireframe
 
 Using Balsamiiq Wireframe I was able to design my website before building it. It allowed me to draw up an basic layout of each page I wanted to include.
+
+#### Main Page 
+
+![Mockup image](/assets/images/readme-images/wireframe-mainpage.png)
+
+#### Contact Page 
+
+![Mockup image](/assets/images/readme-images/wireframe-contact.png)
+
+#### Sign Up Page 
+
+![Mockup image](/assets/images/readme-images/wireframe-signup.png)
+
+
 
 ## Features
 
@@ -62,7 +80,7 @@ To help with user experience, the header which holds the links, is fixed meaning
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate CSS code.
 
-[WAVE Testing](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) was used to test accessibility of website.
+[WAVE Testing](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) was used to test accessibility of website. No errors were found.
 
 ## Performance
 
