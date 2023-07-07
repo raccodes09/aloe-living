@@ -43,6 +43,8 @@ The navigation bar includes four clickable links, including the logo acting as a
 
 To help with user experience, the header which holds the links, is fixed meaning that it will remain at the top as the user scrolls throughout the page.
 
+Each page is styled in a clean, pleasing to the eye contrast using colours associated with natural living, calmness and nature - the idea behind behind Aloe Vera itself.
+
 ## Technologies Used
 
 ### Languages
