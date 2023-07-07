@@ -1,8 +1,8 @@
 # ALOE LIVING
 
-[Live webpage](https://raccodes09.github.io/aloe-living/index.html)
+[Live webpage]()
 
-![Mockup image](docs/Website.png)
+![Mockup image]()
 
 
 
@@ -106,7 +106,12 @@ Issue regarding the links when screen size reduces. It forces content outside th
 
 ## Deployment
 
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+- In the GitHub repository, navigate to the Settings tab
+- From the source section drop-down menu, select the Master Branch
+- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
+The live link can be found here - 
 
 ## Credits
 
@@ -121,6 +126,8 @@ Code from hero image zoom was taken from CI Love Running project.
 [W3Schools](https://www.w3schools.com/) 
 
 [Stack Overflow](https://stackoverflow.com/)
+
+Deploymoent section of README.md provided by CI's template.
 
 ### Media
 
