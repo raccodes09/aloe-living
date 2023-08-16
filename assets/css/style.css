@@ -104,6 +104,13 @@ header {
     flex: 1;
 }
 
+.correct {
+    border-color: #00c853;
+    /* Green border color */
+    background-color: rgba(0, 200, 83, 0.1);
+    /* Light green background color */
+}
+
 .message {
     margin-top: 20px;
     font-size: 18px;
