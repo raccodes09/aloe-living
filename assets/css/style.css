@@ -1,571 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ysabeau:wght@100&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Lisu+Bosa:wght@200&display=swap');
 
 body {
-    font-family: Ysabeau, Helvetica, sans-serif;
-    font-weight: 300;
-    color: #3a3a3a;
+    font-family: "Lisu Bosa", sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.game-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    padding-top: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    /* Adjust margin-top as needed */
+    height: 500px;
 }
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-/* headings and logos */
 
 header {
-    /* border-bottom: 1px none; */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    background-color: #fff;
-    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
-}
-
-.head-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    margin-bottom: 2px;
-}
-
-h1 {
-    font-family: Montserrat, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #1e8449;
-    font-size: 300%;
-}
-
-h2 {
-    font-family: Montserrat, sans-serif;
-    text-transform: capitalize;
-    letter-spacing: 4px;
-    color: #2471a3;
-    font-size: 200%;
-}
-
-h3 {
-    font-family: Montserrat, sans-serif;
-    text-transform: capitalize;
-    letter-spacing: 4px;
-    font-size: 200%;
-}
-
-.logo>a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-decoration: none;
-    color: inherit;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: "Barriecito", sans-serif;
 }
 
 .logo {
-    width: 600px;
+    font-size: 100px;
+    color: #333;
 }
 
-#main-logo {
-    font-size: 50px;
-    margin-left: 30px;
-    flex-grow: 1;
+.instructions {
+    max-width: 500px;
+    margin: 10px auto 0;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    /* Add a border */
+    background-color: #f8f8f8;
+    /* Add a light grey background */
+    padding: 15px;
+    /* Add some padding for spacing */
 }
 
-#sub-logo {
-    font-size: 25px;
-    margin-left: 30px;
+.game-area {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 110%;
+    /* Increase the width by 10% */
+    max-width: 600px;
+    /* Set a maximum width if desired */
+    margin: 20px auto;
+    /* Adjust margin as needed */
+    border: 5px solid #333;
+    /* Add a 5px border with a color */
 }
 
-
-/* navigation links */
-
-#page-links {
-    font-size: 120%;
-    letter-spacing: 4px;
-    list-style-type: none;
-    display: flex;
-    float: right;
-    justify-content: space-between;
+.word-display {
+    /* ... (other styles) */
+    font-size: 30px;
+    /* Increase the font size */
 }
 
-#page-links ul li {
-    font-weight: bold;
-    color: #2471a3;
-    display: inline-flex;
-    margin: 0.3em 1em;
-}
-
-#page-links a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#page-links a:hover {
-    border-bottom: 1px solid #3a3a3a;
-}
-
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
-
-/* hero image and page image */
-
-#hero-image {
-    height: 80px;
-    width: 100%;
-    background: url("../images/aloe-banner.webp") no-repeat center center;
-    overflow: hidden;
-    position: relative;
-    border-top: 2px solid #2471a3;
-    border-bottom: 2px solid #2471a3;
-
-    /* animates zoom effect on loading page */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-/* creates the level of zoom for hero image */
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.1);
-    }
-}
-
-.image-container {
-    display: flex;
-    height: 600px;
-    width: 100%;
-    flex-wrap: wrap;
-
-    overflow: hidden;
-    position: relative;
-    margin-top: 25px;
-    flex-grow: 1;
-}
-
-#image-one {
-    height: 568px;
-    width: 50%;
-    background: url("../images/aloe-plant-extract.webp") no-repeat center center;
-
-}
-
-#image-two {
-    height: 568px;
-    width: 50%;
-    background: url("../images/aloe-slices-oil-small.webp") no-repeat center center;
-}
-
-/* page content */
-
-#page-content {
-    height: 700px;
-    margin: 75px 0;
-    flex-grow: 1;
-    overflow-y: auto;
-}
-
-.page-header {
+.word-row {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 2rem;
+    /* Center the content horizontally */
+    gap: 10px;
+    /* Adjust the gap between input boxes */
 }
 
-hr {
-    border-top: 1px solid #3a3a3a;
-    width: 100%;
-    margin: 5px 0;
-}
-
-
-.benefits-content-container {
+.word-row-wrapper {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 0 auto;
+    align-items: center;
+    gap: 5px;
+    /* Adjust the gap between input boxes */
 }
 
-.benefits-content-container>h2,
-h3 {
-    text-align: center;
-    font-weight: bold;
-    width: 100%;
-    padding-bottom: 15px;
+.word-letter {
+    /* ... (other styles) */
+    width: 40px;
+    /* Increase the width of input boxes */
+    height: 40px;
+    /* Increase the height of input boxes */
 }
 
-.benefits-content-container>h2 {
-    font-size: 300%
+.score-display,
+.attempts {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
-.benefits-content-container>h3 {
-    font-size: 200%;
-}
-
-.benefits-content-container p {
-    font-size: 150%;
-    color: black;
-    font-weight: bold;
-    justify-content: left;
-}
-
-#left-benefits {
-    padding-top: 30px;
-    width: 50%;
-    float: left;
-    margin: 0 15px;
-}
-
-#right-benefits {
-    padding-top: 30px;
-    width: 50%;
-    float: right;
-    margin: 0 15px;
-}
-
-
-
-#left-benefits-content {
-    width: 80%;
-    float: right;
-    line-height: 75px;
-    clear: both;
-    margin-bottom: 25px;
-}
-
-#right-benefits-content {
-    width: 80%;
-    float: left;
-    line-height: 75px;
-    clear: both;
-    margin-bottom: 25px;
-}
-
-/* footer */
-
-footer {
-    height: 150px;
-    margin-top: auto;
-}
-
-.social-networks {
-    text-align: center;
-}
-
-.social-networks>li {
-    margin-top: -150px;
-    display: inline;
-}
-
-.social-networks i {
-    font-size: 160%;
-    margin: 1%;
-    padding: 5%;
-    color: #2471a3;
-}
-
-
-/* contact page */
-
-#contact-content-container {
+.input-section {
     display: flex;
-    padding-top: 30px;
-    padding-right: 30px;
-    justify-content: center;
-    height: 600px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-#contact-content-container>div {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    margin-left: 20px;
-    text-align: left;
+.clear-button,
+.reset-game-button {
+    flex: 1;
 }
 
-#contact-logo {
-    font-size: 250%;
-    color: #1e8449;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#contact-sub-logo {
-    font-size: 200%;
-    color: #2471a3;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-#contact-image {
-    height: 450px;
-}
-
-.contact-heading,
-.contact-info {
+.message {
+    margin-top: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
-.contact-heading {
-    font-size: 2rem;
-    margin-top: 1rem;
-
-}
-
-.contact-info-email {
-    text-transform: lowercase;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.contact-info {
-    font-size: 1.5rem;
-}
-
-
-/* sign-up page */
-
-#signup-sub-logo {
-    font-size: 200%;
-    color: #2471a3;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-#signup-content-container {
-    display: flex;
-    justify-content: center;
-}
-
-#signup-video {
-    float: left;
-    margin-left: 20px;
-    height: 500px;
-    width: 600px;
-}
-
-#signup-logo {
-    font-size: 300%;
-    color: #1e8449;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-
-#signup-form {
-    max-width: 700px;
-    height: 500px;
-    border-radius: 2px;
-    position: relative;
-    padding-left: 10px;
-}
-
-form label {
-    font-weight: bold;
-}
-
-.form-text {
-    color: black;
-    width: 100%;
-    height: 25px;
-    margin: 5px 0 20px 0;
-    border: 2px solid #2471a3;
-    border-radius: 10px;
-    background: transparent;
-}
-
-.form-text:hover {
-    border-color: #1e8449;
-}
-
-#submit-button {
-    background-color: #2471a3;
-    color: white;
-    font-size: 100%;
-    text-align: center;
-    padding: 15px 30px 15px 30px;
-    margin-top: 30px;
-    border-radius: 10px;
-}
-
-#submit-button:hover {
-    background-color: #1e8449;
-}
-
-#hear-about {
-    border-radius: 5px;
-    border: 1px solid #2471a3;
-    height: 20px;
-    width: auto;
-    text-align: center;
-}
-
-
-
-/* media queries */
-
-/* Media query for screens smaller than 600px */
-@media screen and (max-width: 600px) {
-
-    /* Adjust the styles for smaller screens here */
-    header {
-        text-align: center;
-        margin: 0;
-    }
-
-    .logo {
-        display: block;
-        text-align: center;
-    }
-
-    .logo h1 {
-        font-size: 20px;
-    }
-
-    .logo h2 {
-        font-size: 10px;
-    }
-
-    nav {
-        text-align: center;
-    }
-
-    #page-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .benefits-content-container {
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .left-benefits,
-    .right-benefits {
-        width: 100%;
-        margin: 0;
-    }
-
-    #contact-content-container {
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    #contact-image {
-        width: 90vw;
-    }
-
-    .contact-heading,
-    .contact-info {
-        width: 100%;
-        margin: 0;
-    }
-
-    .contact-heading {
-        font-size: 20px;
-        text-align: center;
-        margin-top: 5px;
-    }
-
-    .contact-info,
-    .contact-info-email {
-        font-size: 15px;
-        text-align: center;
-        margin-top: 5px;
-    }
-
-    #signup-logo {
-        font-size: 20px;
-    }
-
-    #signup-sub-logo {
-        font-size: 10px;
-    }
-
-    #signup-content-container {
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    #signup-video {
-        width: 90vw;
-    }
-}
-
-/* Media query for screens between 601px and 1024px */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-
-    /* Adjust the styles for medium-sized screens here */
-    header {
-        padding: 10px;
-    }
-
-    .logo h1 {
-        font-size: 28px;
-    }
-
-    .logo h2 {
-        font-size: 16px;
-    }
-
-    nav {
-        padding: 10px;
-    }
-
-    #page-links ul {
-        justify-content: center;
-    }
-
-
-
-}
-
-/* Media query for screens larger than 1024px */
-@media screen and (min-width: 1025px) {
-
-    /* Adjust the styles for larger screens here */
-    header {
-        padding: 20px;
-    }
-
-    .logo h1 {
-        font-size: 32px;
-    }
-
-    .logo h2 {
-        font-size: 18px;
-    }
-
-    nav {
-        padding: 20px;
-    }
-
-    #page-links ul {
-        justify-content: flex-end;
-    }
+/* Style the score and attempts displays */
+.score-display,
+.attempts {
+    margin-bottom: 10px;
 }
